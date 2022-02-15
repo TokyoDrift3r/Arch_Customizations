@@ -8,12 +8,11 @@
 #-------------------------------------------------------------------------
 
 echo
-echo "INSTALLING XFCE"
+echo "INSTALLING Gnome"
 echo
 
 PKGS=(
-        'xfce4'                 # XFCE Desktop
-        'xfce4-goodies'         # All the extras
+        'gnome'                 # Gnome Desktop
 )
 
 for PKG in "${PKGS[@]}"; do
