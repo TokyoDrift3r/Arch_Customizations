@@ -20,20 +20,20 @@ PKGS=(
     # TERMINAL UTILITIES --------------------------------------------------
 
     'bash-completion'       # Tab completion for Bash
-    'bc'                    # Precision calculator language
-    'bleachbit'             # File deletion utility
+    #'bc'                    # Precision calculator language
+    #'bleachbit'             # File deletion utility
     'curl'                  # Remote content retrieval
-    'elinks'                # Terminal based web browser
-    'feh'                   # Terminal-based image viewer/manipulator
-    'file-roller'           # Archive utility
-    'gnome-keyring'         # System password storage
+    #'elinks'                # Terminal based web browser
+    #'feh'                   # Terminal-based image viewer/manipulator
+    #'file-roller'           # Archive utility
+    #'gnome-keyring'         # System password storage
     'gtop'                  # System monitoring via terminal
     'gufw'                  # Firewall manager
     'hardinfo'              # Hardware info app
     'htop'                  # Process viewer
-    'inxi'                  # System information utility
-    'jq'                    # JSON parsing library
-    'jshon'                 # JSON parsing library
+    #'inxi'                  # System information utility
+    #'jq'                    # JSON parsing library
+    #'jshon'                 # JSON parsing library
     'neofetch'              # Shows system info when you launch terminal
     'ntp'                   # Network Time Protocol to set time via network.
     'numlockx'              # Turns on numlock in X11
@@ -45,8 +45,8 @@ PKGS=(
     'unrar'                 # RAR compression program
     'unzip'                 # Zip compression program
     'wget'                  # Remote content retrieval
-    'xfce4-terminal'        # Terminal emulator
-    'zenity'                # Display graphical dialog boxes via shell scripts
+    #'xfce4-terminal'        # Terminal emulator
+    #'zenity'                # Display graphical dialog boxes via shell scripts
     'zip'                   # Zip compression program
     'zsh'                   # ZSH shell
     'zsh-completions'       # Tab completion for ZSH
@@ -62,12 +62,12 @@ PKGS=(
 
     # GENERAL UTILITIES ---------------------------------------------------
 
-    'catfish'               # Filesystem search
-    'conky'                 # System information viewer
-    'nemo'                  # Filesystem browser
+    #'catfish'               # Filesystem search
+    #'conky'                 # System information viewer
+    #'nemo'                  # Filesystem browser
     'veracrypt'             # Disc encryption utility
-    'variety'               # Wallpaper changer
-    'xfburn'                # CD burning application
+    #'variety'               # Wallpaper changer
+    #'xfburn'                # CD burning application
 
     # DEVELOPMENT ---------------------------------------------------------
 
@@ -93,32 +93,32 @@ PKGS=(
 
     # WEB TOOLS -----------------------------------------------------------
 
-    'chromium'              # Web browser
+    #'chromium'              # Web browser
     'firefox'               # Web browser
-    'filezilla'             # FTP Client
-    'flashplugin'           # Flash
+    #'filezilla'             # FTP Client
+    #'flashplugin'           # Flash
 
     # COMMUNICATIONS ------------------------------------------------------
 
-    'hexchat'               # Multi format chat
-    'irssi'                 # Terminal based IIRC
+    #'hexchat'               # Multi format chat
+    #'irssi'                 # Terminal based IIRC
 
     # MEDIA ---------------------------------------------------------------
 
-    'lollypop'              # Music player
-    'simplescreenrecorder'  # Record your screen
-    'vlc'                   # Video player
-    'xfce4-screenshooter'   # Screen capture.
+    #'lollypop'              # Music player
+    #'simplescreenrecorder'  # Record your screen
+    #'vlc'                   # Video player
+    #'xfce4-screenshooter'   # Screen capture.
 
     # GRAPHICS AND DESIGN -------------------------------------------------
 
-    'gcolor2'               # Colorpicker
-    'gimp'                  # GNU Image Manipulation Program
-    'inkscape'              # Vector image creation app
-    'imagemagick'           # Command line image manipulation tool
-    'nomacs'                # Image viewer
-    'pngcrush'              # Tools for optimizing PNG images
-    'ristretto'             # Multi image viewer
+    #'gcolor2'               # Colorpicker
+    #'gimp'                  # GNU Image Manipulation Program
+    #'inkscape'              # Vector image creation app
+    #'imagemagick'           # Command line image manipulation tool
+    #'nomacs'                # Image viewer
+    #'pngcrush'              # Tools for optimizing PNG images
+    #'ristretto'             # Multi image viewer
 
     # PRODUCTIVITY --------------------------------------------------------
 
@@ -126,8 +126,8 @@ PKGS=(
     'hunspell'              # Spellcheck libraries
     'hunspell-en'           # English spellcheck library
     'libreoffice-fresh'     # Libre office with extra features
-    'mousepad'              # XFCE simple text editor
-    'xpdf'                  # PDF viewer
+    #'mousepad'              # XFCE simple text editor
+    #'xpdf'                  # PDF viewer
 
     # VIRTUALIZATION ------------------------------------------------------
 
