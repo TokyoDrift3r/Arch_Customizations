@@ -4,7 +4,7 @@
 
 This README contains the steps I do to install and configure a fully-functional Arch Linux installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all my preferred applications and utilities. The shell scripts in this repo allow the entire process to be automated.
 
-Setting up an Arch system from scratch is usually a time-intensive process. My goal in developing these scripts and my __[installation guide](https://github.com/rickellis/Arch-Linux-Install-Guide)__ was to be able to go from a blank hard drive to a fully functional Arch system with all my files, applications, and preferences set, as efficiently as possible.
+Setting up an Arch system from scratch is usually a time-intensive process. My goal in developing these scripts and my __[installation guide](https://github.com/TokyoDrift3r/Arch-Linux-Setup)__ was to be able to go from a blank hard drive to a fully functional Arch system with all my files, applications, and preferences set, as efficiently as possible.
 
 Typically a complete install takes me between two and three hours. About and hour for the base install, and a couple hours for all the packages to download. In addition to the scripts in this repo I run a script that copies over my dotfiles, preferences, fonts, git repos, etc., so that when I log into a new system everything is exactly where I left off on my previous one. Almost everything. I run a Windows dev environment on VirtualBox which takes additional setup time, and I have to enable some cloud services so I can access my files.
 
@@ -17,11 +17,7 @@ So...
 ---
 
 ### System Description
-I run XFCE desktop because it's fast, clean, and lightweight. I've tried nearly every other Linux desktop and a few window managers, but I keep coming back to XFCE.
-
-I don't install a greeter, preferring to always boot into the login shell by default. That way if there is ever a show-stopping problem with Xorg or XFCE I can fix it without having to boot from an external drive. To launch XFCE I enter `startx` in the terminal. If you run multiple desktops you can pass a path argument to `startx` pointing to the initialization file for the desktop you want to run.
-
-Since I don't use a greeter, to lock the screen I use Slimlock. I built a bunch of my own themes, and wrote a little shell script that randomizes the choice each time I lock the screen.
+I run Gnome as DE after going back and forth using i3-wm and awesome-wm but didn't feel like adding more configuration scripts to set up my environment. I am a big fan of pywal though for modding terminal colors to align with my wallpaper.
 
 To boot I use `systemd` because it's minimalist, comes built-in, and since the Linux kernel has an EFI image, all we need is a way to execute it.
 
@@ -46,7 +42,7 @@ Follow the steps in my __[Arch Linux Installation Gude](https://github.com/ricke
 ### Boot into new installation
 And get online...
 
-    $   sudo wifi-menu
+    $   sudo iwctl
 
 ---
 
@@ -84,7 +80,7 @@ Typically I just clone it into the home folder and delete it once I'm done.
 Run the following scripts:
 
     $   ./1-xorg.sh
-    $   ./2-xfce.sh 
+    $   ./2-gnome.sh 
     $   ./3-network.sh 
     $   ./4-bluetooth.sh 
     $   ./5-audio.sh 
@@ -97,19 +93,15 @@ Run the following scripts:
 
     $   reboot
 
-### Initialize Xorg:
+### Initialize Gnome using gdm:
 At the terminal, run:
 
-    $   xinit
-
-On subsequent logins use:
-
-    $   startx
+    $   systemctl enable gdm.service
 
 
 Congrats!
 
-You should now have an Arch system running XFCE, with all the base packages that allow network connectivity, bluetooth, printers, etc., and a curated selection of applications.
+You should now have an Arch system running Gnome, with all the base packages that allow network connectivity, bluetooth, printers, etc., and a curated selection of applications.
 
 ### Additional Resources
 
