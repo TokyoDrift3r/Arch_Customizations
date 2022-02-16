@@ -35,7 +35,7 @@ The install steps are as follows:
 
 ### Install Arch Linux
 
-Follow the steps in my __[Arch Linux Installation Gude](https://github.com/rickellis/Arch-Linux-Install-Guide)__. Then:
+Follow the steps in my __[Arch Linux Installation Gude](https://github.com/TokyoDrift3r/Arch-Linux-Setup)__. Then:
 
 ---
 
