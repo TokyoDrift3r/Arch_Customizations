@@ -13,8 +13,6 @@ echo
 
 cd "${HOME}"
 
-echo "CLOING: AURIC"
-git clone "https://github.com/rickellis/AURIC.git"
 
 
 PKGS=(
